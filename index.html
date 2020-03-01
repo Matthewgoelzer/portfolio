@@ -1,0 +1,108 @@
+﻿<!-- 
+Assignment: Project-Portfolio Website
+Author: Matthew Goelzer
+Date: 2/29/2020
+Description: Webpage is home page. Contains photo carasel.
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap 4 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link rel="stylesheet" type="text/css" href="MG_portfolio.css">
+
+    <!-- font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/d488350bce.js" crossorigin="anonymous"></script>
+    <title>Matthew Goelzer Portfolio</title>
+
+    <!-- Nunito font -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700&display=swap" rel="stylesheet">
+
+    <!-- PT Serif Font -->
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="mainNavbar" class="navbar navbar-light navbar-expand-lg py-0 fixed-top container-fluid">
+        <div class="container">
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navLinks" class="collapse navbar-collapse ">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
+                    <li class="nav-item"><a href="about_Portfolio.html" class="nav-link">ABOUT</a></li>
+                    <li class="nav-item"><a href="portfolio_Portfolio.html" class="nav-link">PORTFOLIO</a></li>
+                    <li class="nav-item"><a href="contact_Portfolio.html" class="nav-link">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="container mt-5 homeText">
+        <p class="text-center">Hello, my name is <a href="about_Portfolio.html"> Matthew Goelzer</a> and this is my portfolio site.
+        Feel free to look around and explore this site and any other I have <a href="portfolio_Portfolio.html"> built</a>.
+        If you are interested in any poject that I have done, feel free to <a  href="contact_Portfolio.html"> contact me</a>. </p>
+    </section>
+    <!-- photo carasel -->
+    <section class="container homeText">
+        <div id="carouselExampleIndicators" class="carousel slide w-75 mx-auto" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <!-- miracle mountain camp photo -->
+            <div class="carousel-item active">
+                <a href="portfolio_Portfolio.html" class="nav-link"><img class="d-block w-100 homeCar" src="MMC.png" alt="First slide"></a>
+              
+            </div>
+            <!-- personal finance photo -->
+            <div class="carousel-item">
+                <a href="portfolio_Portfolio.html" class="nav-link"><img class="d-block w-75 h-75 homeCar mx-auto" src="PerFin.png" alt="Second slide"></a>
+              
+            </div>
+            <!-- portfolio webpage photo -->
+            <div class="carousel-item">
+                <a href="portfolio_Portfolio.html" class="nav-link"><img class="d-block w-100 homeCar" src="portWeb.png" alt="Portfolio website"></a>
+              
+            </div>
+          </div>
+          <!-- carasel buttons -->
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        
+    </section>
+    
+
+    <nav class="navbar bottom-navbar">
+        <h6 class="mb-0"> </h6>
+    </nav>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="portfolio_JS.js"></script>
+    <!-- background for nabar apear when scrolling -->
+    <script type="text/javascript">
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $("#mainNavbar");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+</body>
+</html>

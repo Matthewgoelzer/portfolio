@@ -1,0 +1,314 @@
+﻿/* 
+Assignment: Project-Portfolio Website
+Author: Matthew Goelzer
+Date: 2/29/2020
+Description: css file that contains styles for webpage
+*/
+body {
+    background: #303030;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+}
+
+body a {
+    color: inherit;
+    text-decoration: none;
+}
+
+body a:hover{
+    color: inherit;
+    text-decoration: none;
+}
+
+ .pageWords{
+    font-size: 1.0rem;
+}
+
+.pageWords a:hover {
+    color: #006699;
+}
+
+#portListText {
+    font-size: 1.25rem;
+}
+#scrollSkills {
+    height:120px;width:250px;border:1px solid #ccc; overflow:auto;
+}
+.carousel img{
+    height: 40%;
+
+}
+
+#brandName {
+    color: green;
+    font-size: 1.5rem;
+}
+
+#mainNavbar .nav-link {
+    color: white;
+}
+
+    #mainNavbar .nav-link:hover {
+        color: #006699;
+    }
+
+#otherNavbar {
+    background-color: #cfcfcf;
+}
+
+#otherNavbar .nav-link {
+    color: black;
+}
+
+.card-text {
+    color: black;
+}
+
+.homeText{
+    font-size: 1.75rem;
+    text-decoration: solid;
+}
+
+#otherNavbar .nav-link:hover {
+    color: green;
+}
+
+.bottom-navbar h6 {
+    color: white;
+    font-size: .8rem;
+}
+
+.frontPicturesLandscape {
+    max-width: 100%;
+    max-height: 400px;
+}
+
+.frontPicturesPortrait {
+    max-width: 80%;
+    max-height: 500px;
+}
+
+
+#homeJumbo {
+    background: url("mountain.jpg") no-repeat center center;
+    background-size: cover;
+    background-position: 100% 25%;
+    width: 100%;
+    height: 600px;
+}
+
+#aboutJumbo {
+    background: url("For Matthew-25.jpg") no-repeat center center;
+    background-size: cover;
+    background-position: 10% 25%;
+    width: 100%;
+    height: 600px;
+}
+
+#packingList h2 {
+    color: green;
+}
+
+#notBring h2 {
+    color: #e32424;
+}
+
+#regJumbo {
+    background: url("For Matthew-27.jpg") no-repeat center center;
+    background-size: cover;
+    background-position: 100% 25%;
+    width: 100%;
+    height: 600px;
+}
+
+#contactJumbo {
+    background: url("contact.jpg") no-repeat center center;
+    background-size: cover;
+    background-position:;
+    width: 100%;
+    height: 600px;
+}
+
+#forms p {
+    font-size: 1.3rem;
+}
+
+#homeFooter {
+    background: black;
+    color: white;
+    height: 50px;
+}
+
+.jumbotron {
+    background: transparent;
+    color: white;
+}
+
+.jumbotron h1 {
+    font-size: 4rem;
+    font-weight: 300;
+    font-family: 'PT Serif', serif;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.jumbotron p {
+    font-size: 2rem;
+    font-family: 'PT Serif', serif;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.navbar.scrolled {
+    background-color: grey;
+    transition: background 150ms;
+}
+
+
+
+
+@media (max-width: 1000px) {
+
+    .homeText {
+        font-size: 1.0rem;
+    }
+
+    .frontPicturesLandscape {
+        max-width: 100%;
+        max-height: 300px;
+    }
+
+    .frontPicturesPortrait {
+        max-width: 80%;
+        max-height: 300px;
+    }
+
+    #homeJumbo {
+        background: url("mountain.jpg") no-repeat center center;
+        background-size: cover;
+        background-position: 50% 25%;
+        width: 100%;
+        height: 500px;
+    }
+
+    #aboutJumbo {
+        background-size: cover;
+        background-position: 40% 25%;
+        width: 100%;
+        height: 400px;
+    }
+
+    #regJumbo {
+        background-size: cover;
+        background-position: 40% 25%;
+        width: 100%;
+        height: 400px;
+    }
+
+    #contactJumbo {
+        background-size: cover;
+        background-position: 40% 25%;
+        width: 100%;
+        height: 400px;
+    }
+
+    #forms h2 {
+        font-size: 1.25rem;
+    }
+
+    #forms h3 {
+        font-size: 1.15rem;
+    }
+
+    #forms p {
+        font-size: 1rem;
+    }
+
+    #homeFooter h6 {
+        font-size: 1rem;
+    }
+
+    #mainNavbar .nav-link {
+        color: white;
+    }
+
+    .jumbotron h1 {
+        font-size: 2.5rem;
+        height: 100%;
+    }
+
+    .jumbotron p {
+        font-size: 2rem;
+    }
+
+    .footer {
+        position: absolute;
+        bottom: 0%;
+    }
+
+    @media (max-width: 625px) {
+        .homeText {
+        font-size: 1.0rem;
+        }
+        #brandName {
+            color: green;
+            font-size: .9rem;
+        }
+
+        #homeJumbo {
+            height: 250px;
+        }
+
+        #aboutJumbo {
+            background-size: cover;
+            background-position: 40% 25%;
+            width: 100%;
+            height: 250px;
+        }
+
+        #regJumbo {
+            background-size: cover;
+            background-position: 40% 25%;
+            width: 100%;
+            height: 250px;
+        }
+
+        #contactJumbo {
+            background-size: cover;
+            background-position: 40% 25%;
+            width: 100%;
+            height: 250px;
+        }
+
+        #mainNavbar .nav-link {
+            color: white;
+        }
+
+        #forms h2 {
+            font-size: 1.1rem;
+        }
+
+        #forms h3 {
+            font-size: 1rem;
+        }
+
+        #forms p {
+            font-size: 1rem;
+        }
+
+        #homeFooter h6 {
+            font-size: .67rem;
+        }
+
+        .jumbotron h1 {
+            font-size: 1.5rem;
+            height: 100%;
+        }
+
+        .jumbotron p {
+            font-size: 1rem;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 0%;
+        }
+    }

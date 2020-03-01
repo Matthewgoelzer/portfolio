@@ -1,0 +1,88 @@
+﻿<!-- 
+Assignment: Project-Portfolio Website
+Author: Matthew Goelzer
+Date: 2/29/2020
+Description: Webpage about section. contains scroll box, download button, and link
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap 4 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link rel="stylesheet" type="text/css" href="MG_portfolio.css">
+
+    <!-- font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/d488350bce.js" crossorigin="anonymous"></script>
+    <title>About MG</title>
+
+    <!-- Nunito font -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700&display=swap" rel="stylesheet">
+
+    <!-- PT Serif Font -->
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="mainNavbar" class="navbar navbar-light navbar-expand-lg py-0 fixed-top container-fluid">
+        <div class="container">
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navLinks" class="collapse navbar-collapse ">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
+                    <li class="nav-item"><a href="about_Portfolio.html" class="nav-link">ABOUT</a></li>
+                    <li class="nav-item"><a href="portfolio_Portfolio.html" class="nav-link">PORTFOLIO</a></li>
+                    <li class="nav-item"><a href="contact_Portfolio.html" class="nav-link">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- scroll box -->
+    <section class="container pt-4 pageWords">
+    	<div class="row mt-5 justify-content-center">
+	    	<div class=" justify-content-center mx-auto col-12 col-md-6 mt-5 p-0">
+	    		<div class="mx-auto" id="scrollSkills">
+			       	<ul>
+			       		<lh>Skills</lh>
+			       		<li>Adaptive Learner</li>
+			       		<li>Self-Motivated</li>
+			       		<li>Problem Solving</li>
+			       		<li>Technical Writing</li>
+			     		<li>Data Analysis</li>
+			       		<li>Team Development</li>
+			       	</ul>
+	       		</div>
+	   		</div>
+	   		<!-- Download button for resume -->
+	   		<div class="col-6 align-items-center pageWords mt-5"><p class="text-center" id="pageWords">Please look at my resume for more information about my work experince and technologies: <br> <button type="submit" onclick="window.open('MG_Resume.pdf')">My Resume</button></p></div>
+   		</div>
+   		<!-- Link to linkedin webpage -->
+   		<div class="row mt-5 justify-content-center"> <p class="text-center" id="pageWords">Also, feel free to check out my <a href="https://www.linkedin.com/in/matthewgoelzer/">LinkedIn page</a>.</p> </div>
+        <h2 class="text-center"></h2>
+    </section>
+   
+
+    <nav class="navbar  bottom-navbar">
+        <h6 class="mb-0"></h6>
+    </nav>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="portfolio_JS.js"></script>
+    <!-- background for nabar apear when scrolling -->
+    <script type="text/javascript">
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $("#mainNavbar");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+</body>
+</html>

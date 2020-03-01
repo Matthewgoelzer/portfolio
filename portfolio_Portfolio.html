@@ -1,0 +1,109 @@
+﻿<!-- 
+Assignment: Project-Portfolio Website
+Author: Matthew Goelzer
+Date: 2/29/2020
+Description: Webpage contains portfolio sites and links
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap 4 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link rel="stylesheet" type="text/css" href="MG_portfolio.css">
+
+    <!-- font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/d488350bce.js" crossorigin="anonymous"></script>
+    <title>Portfolio MG</title>
+
+    <!-- Nunito font -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700&display=swap" rel="stylesheet">
+
+    <!-- PT Serif Font -->
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="mainNavbar" class="navbar navbar-light navbar-expand-lg py-0 fixed-top container-fluid">
+        <div class="container">
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navLinks" class="collapse navbar-collapse ">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
+                    <li class="nav-item"><a href="about_Portfolio.html" class="nav-link">ABOUT</a></li>
+                    <li class="nav-item"><a href="portfolio_Portfolio.html" class="nav-link">PORTFOLIO</a></li>
+                    <li class="nav-item"><a href="contact_Portfolio.html" class="nav-link">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Cards section -->
+    <section class="container mt-5 pageWords mx-auto">
+    	<div class="text-center"><h2>My Portfolio</h2></div>
+    	<div class="row align-items-center">
+    		<!-- Miracle montain card -->
+    		<div class="col  mt-5 ">
+    			<a href="https://www.miraclemountainidaho.org/" class="nav-link">
+    			<div class="card mx-auto" style="width: 30rem;">
+				  <img class="card-img-top" src="MMC.png" alt="MMC">
+				  <div class="card-body">
+				    <p class="card-text text-center">MiracleMountainIdaho.org</p>
+				  </div>
+				</div>
+				</a>
+    		</div>
+    		<!-- Personal finance card -->
+    		<div class="col mt-5">
+    			<div class="card mx-auto" style="width: 30rem;">
+				  <img class="card-img-top" src="PerFin.png" alt="MMC">
+				  <div class="card-body">
+				    <p class="card-text text-center">Personal Finance Web App</p>
+				  </div>
+				</div>
+    		</div>
+    	</div>
+       <div class="row align-items-center">
+    		<div class="col  mt-5 ">
+    			<!-- portfolio website card -->
+    			<div class="card mx-auto" style="width: 30rem;">
+				  <img class="card-img-top" src="portWeb.png" alt="MMC">
+				  <div class="card-body">
+				    <p class="card-text text-center">My Portfolio Website</p>
+				  </div>
+				</div>
+    		</div>
+    		<!-- Other projects unordered list -->
+    		<div class="col mt-5 mx-auto" id="portListText">
+		       	<ul class="mx-5">
+		       		<lh>Other Projects</lh>
+		       		<li>Hash Map Word Dictionary</li>
+		       		<li>Langton's Ant</li>
+		       		<li>Text-Based Adventure Game</li>
+		       	</ul>
+		      </div>
+    	</div>
+       
+    <nav class="navbar bottom-navbar">
+        <h6 class="mb-0"></h6>
+    </nav>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="portfolio_JS.js"></script>
+    <!-- background for nabar apear when scrolling -->
+    <script type="text/javascript">
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $("#mainNavbar");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+</body>
+</html>
